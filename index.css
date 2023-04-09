@@ -2,7 +2,14 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: digital;
+  src: url(fonts/digital-7.ttf);
+}
+
 .container {
   display: flex;
   justify-content: space-around;
+  font-family: digital;
+  font-size: 42px;
 }
