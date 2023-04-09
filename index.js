@@ -7,7 +7,20 @@ guestScoreEl.textContent = 0;
 let homeScore = 0;
 let guestScore = 0;
 
-// if homeScore > guestScore, then set attribute and add a bright yellow border to the scorebox, change the background color to a metal blue(near black)
+
+//* TOP SCORING TEAM'S SCOREBOX BECOMES HIGHLIGHTED
+function topScore() {
+  if(homeScore > guestScore){
+    homeScoreEl.setAttribute("style", "border: .2rem solid yellow; background: darkblue");
+    guestScoreEl.removeAttribute("style", "border: 2rem solid yellow; background: darkblue");
+  } else if (guestScore > homeScore) {
+    guestScoreEl.setAttribute("style", "border: .2rem solid yellow; background: darkblue");
+    homeScoreEl.removeAttribute("style", "border: 2rem solid yellow; background: darkblue");
+  } else {
+    homeScoreEl.removeAttribute("style", "border: .2rem solid yellow; background: darkblue");
+    guestScoreEl.removeAttribute("style", "border: 2rem solid yellow; background: darkblue");
+  };
+}
 
 // add a NEWGAME button that resets the scores to 0, and resets the TIMER if there is one
 
@@ -17,30 +30,38 @@ let guestScore = 0;
 function addOneHome() {
   homeScore++;
   homeScoreEl.textContent = homeScore;
+  topScore();
 };
 
 function addTwoHome() {
   homeScore += 2;
   homeScoreEl.textContent = homeScore;
+  topScore();
 };
 
 function addThreeHome() {
   homeScore += 3;
   homeScoreEl.textContent = homeScore;
+  topScore();
 };
 
 //* AWAY(GUEST) TEAM SCORING FUNCTIONS
 function addOneGuest() {
   guestScore++;
   guestScoreEl.textContent = guestScore;
+  topScore();
 };
 
 function addTwoGuest() {
   guestScore += 2;
   guestScoreEl.textContent = guestScore;
+  topScore();
 };
 
 function addThreeGuest() {
   guestScore += 3;
   guestScoreEl.textContent = guestScore;
+  topScore();
 };
+
+
