@@ -17,6 +17,7 @@
   height: 385px;
   width: 700px;
   border: .5rem solid rgb(157, 145, 95);
+  border-radius: 1.25rem;
   background-image: url('images/court.avif');
   background-size: cover;
   margin: 3rem auto;
@@ -32,6 +33,8 @@
   font-weight: 400;
   text-align: center;
   line-height: 130px;
+  border: .1rem solid snow;
+  border-radius: .3rem;
 }
 
 .score-btns {
