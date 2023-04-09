@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+body {
+  height: 385px;
+  width: 575px;
+}
+
 @font-face {
   font-family: digital;
   src: url(fonts/digital-7.ttf);
