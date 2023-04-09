@@ -5,6 +5,7 @@
 body {
   height: 385px;
   width: 575px;
+  border: 1rem solid black;
 }
 
 @font-face {
@@ -15,6 +16,18 @@ body {
 .container {
   display: flex;
   justify-content: space-around;
-  font-family: digital;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 42px;
+}
+
+.scorebox {
+  width: 155px;
+  height: 120px;
+  background: black;
+  font-family: digital;
+  color: red;
+  font-size: 90px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 130px;
 }
