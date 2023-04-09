@@ -7,6 +7,12 @@ guestScoreEl.textContent = 0;
 let homeScore = 0;
 let guestScore = 0;
 
+// if homeScore > guestScore, then set attribute and add a bright yellow border to the scorebox, change the background color to a metal blue(near black)
+
+// add a NEWGAME button that resets the scores to 0, and resets the TIMER if there is one
+
+
+
 //* HOME TEAM SCORING FUNCTIONS
 function addOneHome() {
   homeScore++;
