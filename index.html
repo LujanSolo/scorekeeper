@@ -7,12 +7,14 @@
     <title>Scoreboard</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
+      <!-- Container for entire scorecard -->
     <div class="container">
       <div>
-        <h3>HOME</h3>
+        <h3 class="team-name">HOME</h3> 
         <p class="scorebox" id="home-el"></p>
-        <div class="score-btns">
+        <div class="btn-div">
           <button id="addOneHome-btn" onclick="addOneHome()">+1</button>
           <button id="addTwoHome-btn" onclick="addTwoHome()">+2</button>
           <button id="addThreeHome-btn" onclick="addThreeHome()">+3</button>
@@ -27,9 +29,9 @@
         <p class="detail-box" id="differential-box"></p>
       </div>
       <div>
-        <h3>GUEST</h3>
+        <h3 class="team-name">GUEST</h3>
         <p class="scorebox" id="guest-el"></p>
-        <div class="score-btns">
+        <div class="btn-div">
           <button id="addOneGuest-btn" onclick="addOneGuest()">+1</button>
           <button id="addTwoGuest-btn" onclick="addTwoGuest()">+2</button>
           <button id="addThreeGuest-btn" onclick="addThreeGuest()">+3</button>

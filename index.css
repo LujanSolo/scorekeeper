@@ -10,7 +10,7 @@
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 42px;
@@ -37,19 +37,22 @@
   border-radius: .3rem;
 }
 
-.score-btns {
-  width: 155px;
-  height: 45px;
+.btn-div {
+  margin-top: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  width: 155px;
+  height: 55px;
+  /* background-color:rgb(176, 162, 160) */
 }
 
 button {
-  width: 45px;
-  height: 45px;
+  width: 2.8rem;
+  height: 2.8rem;
   font-family: digital;
   font-size: 2rem;
-  font-weight: 500;
-  padding: .5rem;
-  margin-top: 1.3rem;
+  font-weight: 900;
+  background:linear-gradient(orange, red);
+  border: 2px dotted black;
 }
