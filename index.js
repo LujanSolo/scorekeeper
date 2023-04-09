@@ -1,0 +1,1 @@
+// build functions for onclick events +1, +2, +3
