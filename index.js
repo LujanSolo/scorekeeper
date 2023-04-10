@@ -14,8 +14,15 @@ guestScoreEl.textContent = 0;
 let homeScore = 0;
 let guestScore = 0;
 
+// build a function to startGame(),
+// wherein
+// the TIMER BEGINS the countdown. 
+// upon timer === 0, PERIOD advances by 1.
+// pause 10 seconds and start the TIMER again. Repeat until
+// PERIOD 4 runs down to 0 and END GAME. 
 
-//* TOP SCORING TEAM'S SCOREBOX BECOMES HIGHLIGHTED
+
+//* TOP SCORING TEAM'S SCOREBOX BECOMES HIGHLIGHTED EVALUATED ON EVERY SCORING BUTTON CLICK
 function topScore() {
   if(homeScore > guestScore){
     homeScoreEl.setAttribute("style", "border: .2rem solid yellow; background: darkblue");
@@ -29,27 +36,32 @@ function topScore() {
   };
 }
 
-// add a NEWGAME button that resets the scores to 0, and resets the TIMER if there is one
-
-
+//* POINT DIFFERENTIAL (HOMETEAM ADV) TO BE CALLED ON EVERY SCORING BUTTON
+function pointDifferential() {
+  let differential = homeScore - guestScore;
+  differentialEl.textContent = differential;
+}
 
 //* HOME TEAM SCORING FUNCTIONS
 function addOneHome() {
   homeScore++;
   homeScoreEl.textContent = homeScore;
   topScore();
+  pointDifferential();
 };
 
 function addTwoHome() {
   homeScore += 2;
   homeScoreEl.textContent = homeScore;
   topScore();
+  pointDifferential();
 };
 
 function addThreeHome() {
   homeScore += 3;
   homeScoreEl.textContent = homeScore;
   topScore();
+  pointDifferential();
 };
 
 //* AWAY(GUEST) TEAM SCORING FUNCTIONS
@@ -57,18 +69,21 @@ function addOneGuest() {
   guestScore++;
   guestScoreEl.textContent = guestScore;
   topScore();
+  pointDifferential();
 };
 
 function addTwoGuest() {
   guestScore += 2;
   guestScoreEl.textContent = guestScore;
   topScore();
+  pointDifferential();
 };
 
 function addThreeGuest() {
   guestScore += 3;
   guestScoreEl.textContent = guestScore;
   topScore();
+  pointDifferential();
 };
 
 
