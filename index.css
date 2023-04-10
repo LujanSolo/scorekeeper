@@ -98,7 +98,7 @@ button:active {
 #game-timer, #game-period, #point-diff {
   padding-bottom: .1rem;
 }
-.detail-box {
+.details-box {
   width: 100px;
   height: 50px;
   background: black;
@@ -107,7 +107,7 @@ button:active {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
-  line-height: 130px;
+  line-height: 1.2rem;
   border: .1rem solid snow;
   border-radius: .3rem;
 }

@@ -1,5 +1,12 @@
 let homeScoreEl = document.getElementById('home-el');
 let guestScoreEl = document.getElementById('guest-el');
+let timerEl = document.getElementById('timer-box');
+let periodEl = document.getElementById('period-box');
+let differentialEl = document.getElementById('differential-box');
+
+timerEl.textContent = 60;
+periodEl.textContent = 1;
+differentialEl.textContent = 0;
 
 homeScoreEl.textContent = 0;
 guestScoreEl.textContent = 0;
