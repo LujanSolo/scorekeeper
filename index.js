@@ -14,6 +14,7 @@ guestScoreEl.textContent = 0;
 let homeScore = 0;
 let guestScore = 0;
 
+
 // build a function to startGame(),
 // wherein
 // the TIMER BEGINS the countdown. 
@@ -21,10 +22,34 @@ let guestScore = 0;
 // pause 10 seconds and start the TIMER again. Repeat until
 // PERIOD 4 runs down to 0 and END GAME. 
 
+// function startGame() {
+//   let timeLeft = 60;
+//   let timerId = setInterval(countdown, 1000);
+//   countdown();
+// function startGame() {
+
+//   countdown();
+
+//   function countdown() {
+//     let timeLeft = 60;
+//     timerEl.textContent = timeLeft;
+//     let timerId = setInterval(countdown, 1000);
+//     if (timeLeft > 0) {
+//       timeLeft--;
+//       timerEl.textContent = timeLeft;
+//     } else {
+//       // advance to next PERIOD, unless current PERIOD === 4;
+//       clearTimeout(timerId);
+//     }
+//   };
+// };
+
+// }
+
 
 //* TOP SCORING TEAM'S SCOREBOX BECOMES HIGHLIGHTED EVALUATED ON EVERY SCORING BUTTON CLICK
 function topScore() {
-  if(homeScore > guestScore){
+  if (homeScore > guestScore) {
     homeScoreEl.setAttribute("style", "border: .2rem solid yellow; background: darkblue");
     guestScoreEl.removeAttribute("style", "border: 2rem solid yellow; background: darkblue");
   } else if (guestScore > homeScore) {

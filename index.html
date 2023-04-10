@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
 
   <body>
+
     <!-- Container for entire scorecard -->
     <div class="container">
       <!-- HOME COLUMN -->
@@ -18,14 +19,15 @@
         <h3 class="team-name">HOME</h3>
         <p class="scorebox" id="home-el"></p>
         <div class="btn-div">
-          <button id="addOneHome-btn" onclick="addOneHome()">+1</button>
-          <button id="addTwoHome-btn" onclick="addTwoHome()">+2</button>
-          <button id="addThreeHome-btn" onclick="addThreeHome()">+3</button>
+          <button class="add-pts" id="addOneHome-btn" onclick="addOneHome()">+1</button>
+          <button class="add-pts" id="addTwoHome-btn" onclick="addTwoHome()">+2</button>
+          <button class="add-pts" id="addThreeHome-btn" onclick="addThreeHome()">+3</button>
         </div>
       </div>
 
       <!-- DETAILS COLUMN -->
       <div class="details-col">
+        <!-- <button id="start-btn" onclick="startGame()">Start New Game</button> -->
         <h4 id="game-timer">TIME</h4>
         <p class="details-box" id="timer-box"></p>
         <h4 id="game-period">PERIOD</h4>
@@ -39,9 +41,9 @@
         <h3 class="team-name">GUEST</h3>
         <p class="scorebox" id="guest-el"></p>
         <div class="btn-div">
-          <button id="addOneGuest-btn" onclick="addOneGuest()">+1</button>
-          <button id="addTwoGuest-btn" onclick="addTwoGuest()">+2</button>
-          <button id="addThreeGuest-btn" onclick="addThreeGuest()">+3</button>
+          <button class="add-pts" id="addOneGuest-btn" onclick="addOneGuest()">+1</button>
+          <button class="add-pts" id="addTwoGuest-btn" onclick="addTwoGuest()">+2</button>
+          <button class="add-pts" id="addThreeGuest-btn" onclick="addThreeGuest()">+3</button>
         </div>
       </div>
     </div>
