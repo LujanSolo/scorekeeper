@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scoreboard</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
 
   <body>
-      <!-- Container for entire scorecard -->
+    <!-- Container for entire scorecard -->
     <div class="container">
-      <div>
-        <h3 class="team-name">HOME</h3> 
+      <!-- HOME COLUMN -->
+      <div id="home-column">
+        <h3 class="team-name">HOME</h3>
         <p class="scorebox" id="home-el"></p>
         <div class="btn-div">
           <button id="addOneHome-btn" onclick="addOneHome()">+1</button>
@@ -20,6 +23,8 @@
           <button id="addThreeHome-btn" onclick="addThreeHome()">+3</button>
         </div>
       </div>
+
+      <!-- DETAILS COLUMN -->
       <div class="details-col">
         <h4 id="game-period">PERIOD</h4>
         <p class="detail-box" id="period-box"></p>
@@ -28,7 +33,9 @@
         <h4>Pt. Diff.</h4>
         <p class="detail-box" id="differential-box"></p>
       </div>
-      <div>
+
+      <!-- GUEST COLUMN -->
+      <div id="guest-column">
         <h3 class="team-name">GUEST</h3>
         <p class="scorebox" id="guest-el"></p>
         <div class="btn-div">
